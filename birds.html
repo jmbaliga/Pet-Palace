@@ -1,0 +1,189 @@
+﻿
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143266012-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143266012-1');
+    </script>
+
+    <title>Julie Baliga - Paul's Pet Palace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9abc6f4c0d.js"></script>
+    <link href="css/lightbox.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="style2.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <div id="wrapper">
+        <nav class="topnav" id="myNavigation">
+            <a href="index.html"><i class="fas fa-paw"></i> Paul's Pet Palace</a>
+            <a href="about-us.html">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Pets
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="dogs.html"><i class="fas fa-dog"></i> Dogs</a>
+                    <a href="cats.html"><i class="fas fa-cat"></i> Cats</a>
+                    <a href="birds.html"><i class="fas fa-crow"></i> Birds</a>
+                </div>
+            </div>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+        <div id="hero">
+           
+            
+        </div>
+        <main>
+            <h1>Available Birds</h1>
+            <div class="content">
+                <!-- Images used to open the lightbox -->
+                <div class="row">
+                    <div class="column">
+                        <img src="img/bird1-tn.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird2-tn.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird3-tn.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird4-tn.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird5-tn.jpg" onclick="openModal();currentSlide(5)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird6-tn.jpg" onclick="openModal();currentSlide(6)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird7-tn.jpg" onclick="openModal();currentSlide(7)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                        <img src="img/bird8-tn.jpg" onclick="openModal();currentSlide(8)" class="hover-shadow">
+                    </div>
+                </div>
+
+                <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 8</div>
+                            <img src="img/bird1.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 8</div>
+                            <img src="img/bird2.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">3 / 8</div>
+                            <img src="img/bird3.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">4 / 8</div>
+                            <img src="img/bird4.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">5 / 8</div>
+                            <img src="img/bird5.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">6 / 8</div>
+                            <img src="img/bird6.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">7 / 8</div>
+                            <img src="img/bird7.jpg" style="width:100%">
+                        </div>
+
+                        <div class="mySlides">
+                            <div class="numbertext">8 / 8</div>
+                            <img src="img/bird8.jpg" style="width:100%">
+                        </div>
+
+                        <!-- Next/previous controls -->
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                        <!-- Caption text -->
+                        <div class="caption-container">
+                            <p id="caption"></p>
+                        </div>
+
+                        <!-- Thumbnail image controls -->
+                        <div class="column">
+                            <img class="demo" src="img/bird1-tn.jpg" onclick="currentSlide(1)" alt="Sam & Max">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird2-tn.jpg" onclick="currentSlide(2)" alt="Baby & Buddy">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird3-tn.jpg" onclick="currentSlide(3)" alt="Various Budgie">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird4-tn.jpg" onclick="currentSlide(4)" alt="Charlie">
+                        </div>
+                        <div class="column">
+                            <img class="demo" src="img/bird5-tn.jpg" onclick="currentSlide(5)" alt="Lilly">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird6-tn.jpg" onclick="currentSlide(6)" alt="Polly">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird7-tn.jpg" onclick="currentSlide(7)" alt="Ruby & Rio">
+                        </div>
+
+                        <div class="column">
+                            <img class="demo" src="img/bird8-tn.jpg" onclick="currentSlide(8)" alt="Skittles">
+                        </div>
+                    </div>
+                </div><!--End container-->
+
+                <br /><br />
+                <p>The birds on our website are not guaranteed to be available for sale.  Please call our store for the most up-to-date information.</p>
+
+                <div class="fb-like" data-href="https://jmbaliga.com/ppp/birds.html" data-width="50" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <br>
+
+            </div>
+        </main>
+        <footer>
+            <p>© Copyright 2019 <a href="mailto:julie.baliga@gmail.com">Julie M. Baliga</a></p>
+        </footer>
+        <script type="text/javascript" src="js/nav2.js"></script>
+        <script type="text/javascript" src="js/lightbox.js"></script>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+﻿
+<!doctype html>
+<html lang="en">
+<!-- This is an assignment for my Client-side Web Development class, Paul's Pet Palace is ficticous.  Thanks. -->
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143266012-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143266012-1');
+    </script>
+
+    <title>Julie Baliga - Paul's Pet Palace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9abc6f4c0d.js"></script>
+    <link href="css/slides.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="style2.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <div id="wrapper">
+        <nav class="topnav" id="myNavigation">
+            <a href="index.html"><i class="fas fa-paw"></i> Paul's Pet Palace</a>
+            <a href="about-us.html">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Pets
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="dogs.html"><i class="fas fa-dog"></i> Dogs</a>
+                    <a href="cats.html"><i class="fas fa-cat"></i> Cats</a>
+                    <a href="birds.html"><i class="fas fa-crow"></i> Birds</a>
+                </div>
+            </div>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+        <div id="hero">
+            <!-- Slideshow container -->
+            <div class="slideshow-container">
+
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 6</div>
+                    <img src="img/pug.jpg" style="width:100%">
+                    <div class="text">Your future best friend</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 6</div>
+                    <img src="img/sneaky.jpg" style="width:100%">
+                    <div class="text">Your future best friend</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 6</div>
+                    <img src="img/birdie.jpg" style="width:100%">
+                    <div class="text">Your future best friend</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">4 / 6</div>
+                    <img src="img/sleepy.jpg" style="width:100%">
+                    <div class="text">Your future best friend</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">5/ 6</div>
+                    <img src="img/kittens.jpg" style="width:100%">
+                    <div class="text">Your future best friends</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">6 / 6</div>
+                    <img src="img/studybuddy.jpg" style="width:100%">
+                    <div class="text">Your future best friend</div>
+                </div>
+
+
+
+
+
+                <!-- Next and previous buttons -->
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+
+            <!-- The dots/circles -->
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+            <!-- End slideshow container-->
+            <div class="hero-text">
+                <p>Your new friends are waiting... at Paul's Pet Palace</p>
+            </div>
+        </div>
+        <main>
+            <div class="content">
+
+
+
+                <div class="fb-like" data-href="https://jmbaliga.com/ppp/index.html" data-width="50" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+                <br>
+
+            </div>
+        </main>
+        <footer>
+            <p>© Copyright 2019 <a href="mailto:julie.baliga@gmail.com">Julie M. Baliga</a></p>
+        </footer>
+        <script type="text/javascript" src="js/nav2.js"></script>
+        <script type="text/javascript" src="js/slides2.js"></script>
+    </div>
+</body>
+
+</html>

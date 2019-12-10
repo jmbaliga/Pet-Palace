@@ -1,0 +1,107 @@
+﻿
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-143266012-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-143266012-1');
+    </script>
+
+    <title>Julie Baliga - Paul's Pet Palace</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Lobster+Two&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/9abc6f4c0d.js"></script>
+    <link href="css/slides.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="style2.css">
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v4.0"></script>
+
+    <div id="wrapper">
+        <nav class="topnav" id="myNavigation">
+            <a href="index.html"><i class="fas fa-paw"></i> Paul's Pet Palace</a>
+            <a href="about-us.html">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    Pets
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="dogs.html"><i class="fas fa-dog"></i> Dogs</a>
+                    <a href="cats.html"><i class="fas fa-cat"></i> Cats</a>
+                    <a href="birds.html"><i class="fas fa-crow"></i> Birds</a>
+                </div>
+            </div>
+            <a href="contact-us.html"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
+        </nav>
+        
+        <main  class="bg-img">
+            
+                
+                <section class="contactme">
+                    <header class="blockheader">
+                        <div>
+                            <h1 class="container-text">Contact Us</h1>
+                        </div>
+                        
+                    </header>
+                    <form method="post" name="myemailform" action="contact-us.php" class="container">
+                        <fieldset class="box">
+                            <legend>Your details</legend>
+                            <div>
+                                <p>
+                                    <label class="textlabel" for="NameInput">Full Name</label><br>
+                                    <input id="fNameInput" name="name" type="text" required="required" pattern="(.*)\s(.*)" maxlength="50" autofocus="autofocus" placeholder="Please enter your full name" class="textinput" />
+                                </p>
+                                <p>
+                                    <label class="textlabel" for="emailInput">Email</label><br>
+                                    <input id="emailInput" name="email" type="email" class="textinput" required="required" placeholder="Please enter your email" />
+                                </p>
+
+                                <p>
+                                    <label class="textlabel" for="messageInput">Message:</label><br>
+                                    <textarea rows="10" cols="40" name="message" wrap="hard">
+                  </textarea><br>
+                                </p>
+                            </div>
+                        </fieldset>
+                        <br>
+
+                        <input type="submit" class="submitbutton" value="Submit" />
+                        
+
+
+                    </form>
+                    <br /><br /><br /><br /><br /><br />
+                </section>
+
+
+
+
+
+
+
+                
+        </main>
+        <footer>
+            <p>© Copyright 2019 <a href="mailto:julie.baliga@gmail.com">Julie M. Baliga</a></p>
+        </footer>
+        <script type="text/javascript" src="js/nav2.js"></script>
+        <script type="text/javascript" src="js/slides2.js"></script>
+    </div>
+</body>
+
+</html>
